@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-g -W -Wall -Werror -fexceptions -std=c++11 -pedantic -D_GNU_SOURCE -Iinclude
 
-LDFLAGS= `sdl-config --libs` -lSDL2_mixer -lm -lsndfile
+LDFLAGS= -lSDL2 -lSDL2_mixer -lm -lsndfile
 
 playtune: build/main.o build/Song.o build/Track.o build/Note.o build/Instrument.o
 	$(CC) -o playtune build/main.o build/Song.o build/Track.o build/Note.o build/Instrument.o $(LDFLAGS)
