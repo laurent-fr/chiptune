@@ -42,3 +42,5 @@ TODO :
   * Add CLI parameters (.tune file)
   * Add instruments definitions in the .tune file
   * Add tempo in the .tune file
+  * normalize volume of the sample
+  * Need many more effects !
