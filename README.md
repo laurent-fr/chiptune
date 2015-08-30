@@ -35,6 +35,8 @@ STATUS :
 COMPILE :
 
 You will need SDL2, SDL2_mixer, and libsndfile (dev packages).
+
+apt-get install libsndfile1-dev libsdl2-mixer-dev for debian / ubuntu based distros.
  
  
 TODO :
