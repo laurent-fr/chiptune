@@ -20,10 +20,10 @@ The instruments availables are :
   * noise
 
 There is an ADSR volume envelope with 4 parameters (0-255) :
-  * A : attack time, volume up 1 unit every 10ms, until 255.
-  * D : decay time, volume down 1 unit until reaching S value
+  * A : attack time, volume up "A" units every 10ms, until 255.
+  * D : decay time, volume down "D" units every 10ms, until reaching S value
   * S : sustain volume, constant until note off
-  * R : release time (after note off), volume down 1 unit every 10ms until 0.
+  * R : release time (after note off), volume down "R" units every 10ms until 0.
 
 For now the instruments are hardcoded in Song::load (should go in the .tune file)
 
