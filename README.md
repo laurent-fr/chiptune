@@ -28,32 +28,35 @@ There is an ADSR volume envelope with 4 parameters (0-255) :
 For now the instruments are hardcoded in Song::load (should go in the .tune file)
 
 
-STATUS :
+### STATUS :
 
   super pre-alpha !
   
-COMPILE :
+### COMPILE :
 
 You will need SDL2, SDL2_mixer, and libsndfile (dev packages).
 
 apt-get install libsndfile1-dev libsdl2-mixer-dev for debian / ubuntu based distros.
 
-RUNNING :
+### RUNNING :
 
+```
 $ ./playtune 
 Playtune command help:
 -t <filename.tune> : open a .tune file
 -i : get tune infos
 -p : play the tune
 -h : help
+```
  
+``` 
 $ ./playtune -t example/mario.tune -p
 PlayTune
 Loading example/mario.tune ...
 Playing ...
-
+```
  
-TODO :
+### TODO :
 
   * Add instruments definitions in the .tune file
   * Add tempo in the .tune file
