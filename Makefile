@@ -20,3 +20,7 @@ build/Note.o: src/Note.cpp
 
 build/Instrument.o: src/Instrument.cpp
 	$(CC) -c src/Instrument.cpp -o build/Instrument.o $(CFLAGS)
+
+clean:
+	rm build/*.o
+	rm playtune

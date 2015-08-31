@@ -2,7 +2,7 @@
 
 A small tool for creating chiptune music (see example/mario.mp3 to get the idea).
 
-The input is a binary file (.tune) formatted like this :
+The input is a binary file (.tune) formatted like this:
 
 1 note  = 8 bytes (multibytes parameters are big-endian)-->
   * 2 bytes : tick, an integer representing the starting time of a note, the unit is Song._ticks_per_second
@@ -12,7 +12,7 @@ The input is a binary file (.tune) formatted like this :
   * 2 bytes : duration, same unit as tick
   * 1 byte : future use
 
-The instruments availables are :
+The instruments availables are:
   * square wave ( with duty cycle as a parameter)
   * triangle
   * saw
@@ -37,11 +37,24 @@ COMPILE :
 You will need SDL2, SDL2_mixer, and libsndfile (dev packages).
 
 apt-get install libsndfile1-dev libsdl2-mixer-dev for debian / ubuntu based distros.
+
+RUNNING :
+
+$ ./playtune 
+Playtune command help:
+-t <filename.tune> : open a .tune file
+-i : get tune infos
+-p : play the tune
+-h : help
  
+$ ./playtune -t example/mario.tune -p
+PlayTune
+Loading example/mario.tune ...
+Playing ...
+
  
 TODO :
 
-  * Add CLI parameters (.tune file)
   * Add instruments definitions in the .tune file
   * Add tempo in the .tune file
   * normalize volume of the sample
