@@ -38,6 +38,8 @@ You will need SDL2, SDL2_mixer, and libsndfile (dev packages).
 
 apt-get install libsndfile1-dev libsdl2-mixer-dev for debian / ubuntu based distros.
 
+brew install libsndfile sdl2 sdl2_mixer on Mac, with homebrew (http://brew.sh)
+
 ### RUNNING :
 
 ```
